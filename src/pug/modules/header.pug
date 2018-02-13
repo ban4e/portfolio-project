@@ -1,0 +1,42 @@
+header.header
+	.header__bg
+		.header__bg_wrap
+			ul.socials
+				li.socials__item
+					a(href="#").socials__link
+						+icon('vk', 'socials__icon')
+				li.socials__item
+					a(href="#").socials__link
+						+icon('github', 'socials__icon')
+				li.socials__item
+					a(href="#").socials__link
+						+icon('in', 'socials__icon')
+			a(href="#").hamburger
+				span.hamburger__line
+				span.hamburger__line
+				span.hamburger__line
+		.author
+			img(src="/img/content/human.png").author__img
+			span.author__name Alexandr Ivkin
+			span.author__desc Personal website
+		svg(viewbox="0 0 1000 100" preserveAspectRatio="none" class="triangle triangle_left")
+			polygon(points="0,0 0,100 1000,100")
+		svg(viewbox="0 0 1000 100" preserveAspectRatio="none" class="triangle triangle_right")
+			polygon(points="0,100 1000,100 1000,0")
+	//- .menu
+	//- 	nav.nav
+	//- 		a(href="#").nav__logo
+	//- 			+icon('landscape', 'nav__logo-img')
+	//- 			span.nav__logo_span ABSTRACT <br> LOGO
+	//- 		ul.nav__list
+	//- 			li.nav__item
+	//- 				a(href="#").nav__link lorem
+	//- 			li.nav__item
+	//- 				a(href="#").nav__link ipsum
+	//- 			li.nav__item
+	//- 				a(href="#").nav__link dolor
+	//- 			li.nav__item
+	//- 				a(href="#").nav__link sit
+	//- 			li.nav__item
+	//- 				a(href="#").nav__link amet
+	//- .header__background

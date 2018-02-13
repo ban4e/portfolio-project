@@ -1,0 +1,56 @@
+.footer
+	padding 30px 10px 0px 10px
+	background-color mainBgc
+	color #ccc
+	p
+		padding 10px 0
+		text-align center
+.info
+	display flex
+	flex-wrap wrap
+.info__site
+	flex 1 1 30%
+	padding-right 30px
+	padding-left 20px
+.info__menu
+	flex 1 1 40%
+	padding 0 30px
+	position relative
+	&:before
+		content ""
+		position absolute
+		display block
+		background-color #fff
+		height 100%
+		width 1px
+		left 0
+		top 0
+	&:after
+		content ""
+		position absolute
+		display block
+		background-color #fff
+		height 100%
+		width 1px
+		right 0
+		top 0
+.info__contact
+	flex 1 1 30%
+	padding-left 30px
+	padding-right 20px
+.bNav
+	display flex
+	justify-content center
+.bNav__item:not(:last-child)
+	margin-right 40px
+.bNav__link
+	color white
+.footer__icon
+	display inline-block
+	height 24px
+	width 24px
+	fill white
+	margin-right 10px
+	margin-bottom 5px
+.icon-phone
+	stroke-width 2px

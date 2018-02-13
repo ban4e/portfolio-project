@@ -1,0 +1,60 @@
+extends ../layout/layout
+block title
+	| Главная страница
+
+block content
+	section.section.about
+		.about__left
+			.personal
+				.personal__title ОБО МНЕ
+				.personal__img
+					img(src="/img/content/human.png")
+			.whoami
+				.whoami__title.cmn-title КТО Я
+				.whoami__text Я начинающий веб разработчик. На данный момент я мало что умею, но стремлюсь каждый день узнавать новое и прокачиваться, чтобы стать настоящим профессионалом.
+		.about__right
+			.whatcani
+				.whatcani__title.cmn-title ЧТО Я УМЕЮ
+				p Сейчас больше front-end, в планах back-end
+				.skill Frontend
+					ul.skill__list
+						li.skill__item
+							svg.circle
+								circle(r="45" cx="50%" cy="50%" fill="none").basic
+								circle(r="45" cx="50%" cy="50%" fill="none").progress
+								span.skill__text HTML
+						li.skill__item
+							svg.circle
+								circle(r="45" cx="50%" cy="50%" fill="none")
+								span.skill__text CSS
+						li.skill__item
+							svg.circle
+								circle(r="45" cx="50%" cy="50%" fill="none")
+								span.skill__text JS
+				.skill Backend
+					ul.skill__list
+						li.skill__item
+							svg.circle
+								circle(r="45" cx="50%" cy="50%" fill="none")
+								span.skill__text PHP
+						li.skill__item
+							svg.circle
+								circle(r="45" cx="50%" cy="50%" fill="none")
+								span.skill__text MySQL
+						li.skill__item
+							svg.circle
+								circle(r="45" cx="50%" cy="50%" fill="none")
+						li.skill__item
+							svg.circle
+								circle(r="45" cx="50%" cy="50%" fill="none")
+				.skill Workflow
+					ul.skill__list
+						li.skill__item
+							svg.circle
+								circle(r="45" cx="50%" cy="50%" fill="none")
+						li.skill__item
+							svg.circle
+								circle(r="45" cx="50%" cy="50%" fill="none")
+						li.skill__item
+							svg.circle
+								circle(r="45" cx="50%" cy="50%" fill="none")

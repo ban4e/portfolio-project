@@ -1,0 +1,112 @@
+.about
+	display flex
+	flex-wrap wrap
+.about__left
+	flex 1 1 50%
+	background-color leftPart
+	text-align center
+	padding 20px 10px 0 10px
+.about__right
+	flex 1 1 50%
+	text-align center
+	padding 20px 10px 0 10px
+.personal
+	display flex
+	flex-direction column
+	align-items center
+.personal__title
+	font-family Comical, sans-serif
+	font-size 63px
+	line-height 1
+	color #605A64
+	position relative
+	display inline-block
+	&:before
+		content ""
+		position absolute
+		height 5px
+		width 25px
+		background-color scndCol
+		left -40px
+		top 50%
+		margin-top -2px
+	&:after
+		content ""
+		position absolute
+		height 5px
+		width 25px
+		background-color scndCol
+		right -40px
+		top 50%
+		margin-top -2px
+.personal__img
+	display inline-block
+	position relative
+	width 200px
+	height 200px
+	background mainBgc
+	box-sizing border-box
+	clip-path polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%)
+	img
+		position absolute
+		max-width 100%
+		top 2px /* equal to border thickness */
+		left 2px /* equal to border thickness */
+		width 196px /* container height - (border thickness * 2) */
+		height 196px /* container height - (border thickness * 2) */
+		clip-path polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%)
+.cmn-title
+	font-family Comical, sans-serif
+	font-size 35px
+	line-height 1
+	color txtCol
+	display inline-block
+	position relative
+	margin-bottom 56px
+	&:after
+		content ""
+		position absolute
+		height 3px
+		width 120%
+		background-color txtCol
+		left -10%
+		bottom -28px
+.whoami__text
+	width 60%
+	margin 0 auto
+	text-align left
+	margin-bottom 30px
+.skill
+	text-align left
+	padding 0 0 0 30px
+	font-size 28px
+	margin-bottom 40px
+.skill__list
+	display flex
+	flex-wrap wrap
+	margin-left -35px
+.skill__item
+	margin-left 35px
+	position relative
+.skill__text
+	position absolute
+	top 50%
+	left 50%
+	transform translate(-50%,-50%)
+	font-size 16px
+.circle
+	width 110px
+	height 110px
+	fill none
+	stroke-width 20
+	stroke #ccc
+	transform rotate(-90deg)
+	// &:hover .progress
+	// 	stroke-dasharray 100 282.6
+	// 	transition all 1s linear
+.progress
+	stroke-dasharray 282.6
+	stroke-dashoffset 80
+	transition all 1s linear
+	stroke tomato
+	// stroke-linecap round
